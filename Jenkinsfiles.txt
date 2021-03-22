@@ -1,21 +1,18 @@
 pipeline {
+branch 'main'
   agent any
   stages {
    
 
     stage('Build') {
-    when { 
-        branch 'main'
-      }
+    
       steps {                
       git 'https://github.com/Indhuja-R/php.git'
 
       }
     }
     stage('test') {
-    when { 
-        branch 'main'
-      }
+    
       steps {                
       git 'https://github.com/Indhuja-R/php/phptest.git'
 
