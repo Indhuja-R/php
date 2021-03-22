@@ -1,15 +1,10 @@
-pipeline {
-
-  agent any
-  stages {
-   
-
+node {
     stage('commit') {
     
-      steps {                
+                    
       git 'https://github.com/Indhuja-R/php.git'
 
-      }
+     
     }
     stage('build') {
     
@@ -18,13 +13,7 @@ pipeline {
     
       
     }
-    stage('test') {
+   
     
-      steps {                
-          sh "mvn clean verify"
-
-      }
-    }
-    
-  }
+  
 }
