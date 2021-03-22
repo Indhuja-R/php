@@ -12,10 +12,10 @@ pipeline {
       }
     }
     stage('build') {
-    steps{
+    
        def mvnHome=tool name: 'maven', type: 'maven'
        sh "${ mynHome}/bin/mvn package"
-    }
+    
       
     }
     stage('test') {
