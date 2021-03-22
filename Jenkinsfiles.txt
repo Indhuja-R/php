@@ -8,6 +8,9 @@ pipeline {
     
       steps {                
       git 'https://github.com/Indhuja-R/php.git'
+       withMaven {
+      sh "mvn clean verify"
+    } 
 
       }
     }
