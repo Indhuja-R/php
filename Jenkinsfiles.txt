@@ -17,7 +17,7 @@ pipeline {
         branch 'main'
       }
       steps {                
-      git 'https://github.com/Indhuja-R/php.git'
+      git 'https://github.com/Indhuja-R/php/phptest.git'
 
       }
     }
