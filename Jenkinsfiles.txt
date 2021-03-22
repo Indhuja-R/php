@@ -8,7 +8,9 @@ pipeline {
     
       steps {                
       git 'https://github.com/Indhuja-R/php.git'
-       withMaven {
+      
+       withMaven(maven : 'apache-maven-3.6.1) {
+       
       sh "mvn clean verify"
     } 
 
