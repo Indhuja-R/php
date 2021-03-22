@@ -49,11 +49,5 @@
         </plugins>
     </build>
   
-    <phpunit bootstrap="vendor/autoload.php" colors="true">
-    <testsuites>
-        <testsuite name="IntroPHPUnitTest">
-            <directory>tests</directory>
-        </testsuite>
-    </testsuites>
-</phpunit>
+    
 </project>
