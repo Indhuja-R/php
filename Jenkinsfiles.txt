@@ -14,7 +14,7 @@ pipeline {
     stage('test') {
     
       steps {                
-      git 'https://github.com/Indhuja-R/php/phptest.git'
+          sh "mvn clean verify"
 
       }
     }
