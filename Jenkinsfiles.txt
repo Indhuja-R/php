@@ -4,6 +4,9 @@ pipeline {
    
 
     stage('Build') {
+    when { 
+        branch 'main'
+      }
       steps {                
       git 'https://github.com/Indhuja-R/php.git'
 
