@@ -1,23 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Clean') {
-      steps {
-        sh './gradlew clean --no-daemon'
-      }
-    }
+   
 
     stage('Build') {
-      steps {
-        sh './gradlew build --no-daemon'
+      steps {                
+      git 'https://github.com/Indhuja-R/php.git'
+
       }
     }
 
-    stage('Upload Artifacts') {
-      steps {
-        archiveArtifacts 'build/libs/**.jar'
-      }
-    }
+    
 
     
   environment {
